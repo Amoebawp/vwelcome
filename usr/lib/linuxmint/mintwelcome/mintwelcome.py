@@ -74,12 +74,12 @@ class MintWelcome():
 
         # Action buttons
         builder.get_object("button_forums").connect("clicked", self.visit, "https://forums.linuxmint.com")
-        builder.get_object("button_documentation").connect("clicked", self.visit, "https://linuxmint.com/documentation.php")
-        builder.get_object("button_contribute").connect("clicked", self.visit, "https://linuxmint.com/getinvolved.php")
+        # builder.get_object("button_documentation").connect("clicked", self.visit, "https://linuxmint.com/documentation.php")
+        # builder.get_object("button_contribute").connect("clicked", self.visit, "https://linuxmint.com/getinvolved.php")
         builder.get_object("button_irc").connect("clicked", self.visit, "irc://irc.spotchat.org/linuxmint-help")
         builder.get_object("button_codecs").connect("clicked", self.visit, "apt://mint-meta-codecs?refresh=yes")
-        builder.get_object("button_new_features").connect("clicked", self.visit, new_features)
-        builder.get_object("button_release_notes").connect("clicked", self.visit, release_notes)
+        #builder.get_object("button_new_features").connect("clicked", self.visit, new_features)
+        #builder.get_object("button_release_notes").connect("clicked", self.visit, release_notes)
         builder.get_object("button_mintupdate").connect("clicked", self.launch, "mintupdate")
         builder.get_object("button_mintinstall").connect("clicked", self.launch, "mintinstall")
         builder.get_object("button_timeshift").connect("clicked", self.pkexec, "timeshift-gtk")
@@ -126,17 +126,17 @@ class MintWelcome():
         self.first_steps_row = SidebarRow(page, _("First Steps"), "dialog-information-symbolic")
         self.list_box.add(self.first_steps_row)
 
-        page = builder.get_object("page_documentation")
-        self.stack.add_named(page, "page_documentation")
-        self.list_box.add(SidebarRow(page, _("Documentation"), "accessories-dictionary-symbolic"))
+        # page = builder.get_object("page_documentation")
+        # self.stack.add_named(page, "page_documentation")
+        # self.list_box.add(SidebarRow(page, _("Documentation"), "accessories-dictionary-symbolic"))
 
         page = builder.get_object("page_help")
         self.stack.add_named(page, "page_help")
         self.list_box.add(SidebarRow(page, _("Help"), "help-browser-symbolic"))
 
-        page = builder.get_object("page_contribute")
-        self.stack.add_named(page, "page_contribute")
-        self.list_box.add(SidebarRow(page, _("Contribute"), "starred-symbolic"))
+        # page = builder.get_object("page_contribute")
+        # self.stack.add_named(page, "page_contribute")
+        # self.list_box.add(SidebarRow(page, _("Contribute"), "starred-symbolic"))
 
         self.list_box.connect("row-activated", self.sidebar_row_selected_cb)
 

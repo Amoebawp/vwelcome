@@ -1743,7 +1743,7 @@
                               <object class="GtkLabel">
                                 <property name="visible">True</property>
                                 <property name="can-focus">False</property>
-                                <property name="label" translatable="yes">Welcome to Linux Mint</property>
+                                <property name="label" translatable="no">Bienvenue dans Linux V</property>
                                 <property name="xalign">0</property>
                                 <attributes>
                                   <attribute name="weight" value="bold"/>
@@ -1801,7 +1801,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="yes">This welcome screen will guide you through your first steps, show you how to find help and where to get more information about Linux Mint.</property>
+                        <property name="label" translatable="no">Linux V est une distribution propulsée par Circuit Libre, une entreprise Vendéenne attachée aux valeurs de l'informatique libre et responsable.</property>
                         <property name="wrap">True</property>
                         <property name="xalign">0</property>
                       </object>
@@ -1815,7 +1815,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="yes">On behalf of the development team and everyone involved in the project, we'd like to thank you for choosing Linux Mint. We hope you'll enjoy using it as much as we enjoy working on it.</property>
+                        <property name="label" translatable="no">Basée sur Linux Mint, une distribution Linux reconnue pour sa rapidité, sa légèreté et sa stabilité, Linux V offre une expérience moderne, sécurisante et facile à prendre en main !</property>
                         <property name="wrap">True</property>
                         <property name="xalign">0</property>
                       </object>
@@ -1829,7 +1829,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="yes">Have a great time and don't hesitate to send us your feedback.</property>
+                        <property name="label" translatable="no">Cet écran d'accueil va vous guider pour vos premiers pas.</property>
                         <property name="wrap">True</property>
                         <property name="xalign">0</property>
                       </object>
@@ -1884,7 +1884,7 @@
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
                         <property name="pixel-size">32</property>
-                        <property name="icon-name">linuxmint-logo-ring-symbolic</property>
+                        <property name="icon-name">cinnamon-symbolic</property>
                         <property name="icon_size">0</property>
                       </object>
                       <packing>

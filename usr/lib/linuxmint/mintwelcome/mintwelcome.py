@@ -41,7 +41,7 @@ class MintWelcome():
         builder.add_from_file('/usr/share/linuxmint/mintwelcome/mintwelcome.ui')
 
         window = builder.get_object("main_window")
-        window.set_icon_name("mintwelcome")
+        window.set_icon_name("cinnamon-symbolic")
         window.set_position(Gtk.WindowPosition.CENTER)
         window.connect("destroy", Gtk.main_quit)
 
@@ -63,8 +63,9 @@ class MintWelcome():
             dist_name = "LMDE"
 
         # Setup the labels in the Mint badge
-        builder.get_object("label_version").set_text("%s %s" % (dist_name, release))
-        builder.get_object("label_edition").set_text("%s %s" % (edition, architecture))
+        #builder.get_object("label_version").set_text("%s %s" % (dist_name, release))
+        #builder.get_object("label_edition").set_text("%s %s" % (edition, architecture))
+        builder.get_object("label_edition").set_text("Circuit Libre")
 
         # Setup the main stack
         self.stack = Gtk.Stack()

@@ -1497,7 +1497,7 @@
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
                         <property name="orientation">vertical</property>
-                        <property name="spacing">3</property>
+                        <property name="spacing">12</property>
                         <child>
                           <object class="GtkLabel">
                             <property name="visible">True</property>
@@ -1519,7 +1519,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="no">Linux V est édité par Circuit Libre, une entreprise artisanale vendéenne attachée aux valeurs de l'informatique libre et responsable. Nous prenons un soin particulier à vous fournir la meilleure expérience possible avec nos ordinateurs en vous proposant une assistance professionnelle et personnalisée. Retrouvez comment nous contacter grâçe à l'application Assistance Circuit Libre installée automatiquement avec votre système d'exploitation Linux V.</property>
+                            <property name="label" translatable="no">Linux V est édité par Circuit Libre, une entreprise artisanale vendéenne attachée aux valeurs de l'informatique libre et responsable.</property>
                             <property name="wrap">True</property>
                             <property name="xalign">0</property>
                           </object>
@@ -1527,6 +1527,34 @@
                             <property name="expand">True</property>
                             <property name="fill">True</property>
                             <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="no">En ayant la volonté toute particulière de vous fournir la meilleure expérience possible avec nos ordinateurs, il vous est également proposé une assistance professionnelle et personnalisée.</property>
+                            <property name="wrap">True</property>
+                            <property name="xalign">0</property>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">2</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="no">Retrouvez comment nous contacter grâçe à l'application Assistance Circuit Libre installée automatiquement avec votre système d'exploitation Linux V.</property>
+                            <property name="wrap">True</property>
+                            <property name="xalign">0</property>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">3</property>
                           </packing>
                         </child>
                         <child>
@@ -1546,7 +1574,7 @@
                             <property name="expand">False</property>
                             <property name="fill">True</property>
                             <property name="pack-type">end</property>
-                            <property name="position">2</property>
+                            <property name="position">4</property>
                           </packing>
                         </child>
                       </object>

@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=mintwelcome
-Comment=Linux Mint Welcome Screen
-Icon=mintwelcome
+Comment=Linux V Welcome Screen
+Icon=start-here-symbolic
 Exec=mintwelcome-launcher
 Terminal=false
 Type=Application

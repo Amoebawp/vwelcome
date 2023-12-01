@@ -662,7 +662,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">First, make yourself at home. Choose your favorite color and whether you prefer a light or a dark desktop theme.</property>
+                            <property name="label" translatable="no">Tout d'abord, faites comme chez vous. Optez pour un thème clair ou foncé, changez le pack d'icones ou le curseur selon vos préférences.</property>
                             <property name="wrap">True</property>
                             <property name="xalign">0</property>
                           </object>

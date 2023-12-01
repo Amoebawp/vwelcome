@@ -230,7 +230,7 @@
                         <property name="border-width">24</property>
                         <property name="orientation">vertical</property>
                         <property name="spacing">18</property>
-                        <child>
+                        <!-- <child>
                           <object class="GtkBox">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
@@ -334,7 +334,7 @@
                             <property name="fill">True</property>
                             <property name="position">0</property>
                           </packing>
-                        </child>
+                        </child> -->
                         <child>
                           <object class="GtkBox" id="box_new_features">
                             <property name="visible">True</property>
@@ -747,7 +747,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">Next, let's set automatic system snapshots. A minimum of two daily and two boot snapshots are recommended. If anything breaks, you can then restore your computer to its previous working state.</property>
+                            <property name="label" translatable="no">Ensuite, mettons en place la prise automatique de sauvegardes instantanées du système. Nous recommandons un minimum d'un instantané par jour. Si quelque chose cessait de fonctionner, vous pourriez alors restaurer l'état de fonctionnement précédent de votre ordinateur.</property>
                             <property name="wrap">True</property>
                             <property name="xalign">0</property>
                           </object>
@@ -1272,7 +1272,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">There are about 60,000 applications available. Linux Mint comes with the bare minimum to get you started. The Software Manager is there if you're looking for more.</property>
+                            <property name="label" translatable="no">Installez plus de 60 000 applications disponibles gratuitement dans la logithèque. Obtenez les outils dont vous avez besoin pour exploiter au mieux votre expérience sur Linux V. </property>
                             <property name="wrap">True</property>
                             <property name="xalign">0</property>
                           </object>
@@ -1453,6 +1453,119 @@
                 <property name="border-width">24</property>
                 <property name="orientation">vertical</property>
                 <property name="spacing">18</property>
+
+
+
+                <!-- ################### CIRCUIT LIBRE ###################### -->
+
+                <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="spacing">24</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="valign">start</property>
+                        <property name="margin-top">6</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">12</property>
+                        <child>
+                          <object class="GtkImage" id="image_new_features4">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="icon-name">start-here-symbolic</property>
+                            <property name="icon_size">6</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">3</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Circuit Libre, votre support informatique en Vendée !</property>
+                            <property name="xalign">0</property>
+                            <attributes>
+                              <attribute name="weight" value="bold"/>
+                              <attribute name="scale" value="1.2"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="no">Linux V est édité par Circuit Libre, une entreprise artisanale vendéenne attachée aux valeurs de l'informatique libre et responsable. Nous prenons un soin particulier à vous fournir la meilleure expérience possible avec nos ordinateurs en vous proposant une assistance professionnelle et personnalisée. Retrouvez comment nous contacter grâçe à l'application Assistance Circuit Libre installée automatiquement avec votre système d'exploitation Linux V.</property>
+                            <property name="wrap">True</property>
+                            <property name="xalign">0</property>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="button_irc">
+                            <property name="label" translatable="yes">Launch</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="halign">center</property>
+                            <property name="margin-top">3</property>
+                            <style>
+                              <class name="suggested-action"/>
+                              <class name="text-button"/>
+                            </style>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="pack-type">end</property>
+                            <property name="position">2</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+
+                <!-- ################### LINUX MINT ###################### -->
+
                 <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
@@ -1471,7 +1584,7 @@
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
                             <property name="halign">center</property>
-                            <property name="icon-name">applications-internet</property>
+                            <property name="icon-name">mintwelcome</property>
                             <property name="icon_size">6</property>
                           </object>
                           <packing>
@@ -1514,7 +1627,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">The Linux Mint forums are the best place to find help. Join thousands of users, search topics and threads and find solutions to your problems.</property>
+                            <property name="label" translatable="no">Linux V est une adaptation du formidable projet libre, gratuit et open source français Linux Mint. Si vous souhaitez en découvrir plus, les forums communautaires de Linux Mint sont à votre disposition. Rejoignez des milliers d'utilisateurs, cherchez parmis les sujets, les fils de discussion, et trouvez des solutions à vos problèmes.</property>
                             <property name="wrap">True</property>
                             <property name="xalign">0</property>
                           </object>
@@ -1555,10 +1668,120 @@
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">0</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
+
+                <!-- ################### DOCUMENTATIONS ###################### 
+
                 <child>
+                  <object class="GtkBox">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="spacing">24</property>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="valign">start</property>
+                        <property name="margin-top">6</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">12</property>
+                        <child>
+                          <object class="GtkImage" id="image_user_guide3">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">center</property>
+                            <property name="icon-name">text-x-generic</property>
+                            <property name="icon_size">6</property>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">3</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Documentation</property>
+                            <property name="xalign">0</property>
+                            <attributes>
+                              <attribute name="weight" value="bold"/>
+                              <attribute name="scale" value="1.2"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">The Linux Mint documentation consists of a collection of guides, available in PDF, ePUB and HTML and available in many languages. Click the button below to see which guides are available.</property>
+                            <property name="wrap">True</property>
+                            <property name="xalign">0</property>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="button_documentation">
+                            <property name="label" translatable="yes">Launch</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="halign">center</property>
+                            <property name="margin-top">3</property>
+                            <style>
+                              <class name="suggested-action"/>
+                              <class name="text-button"/>
+                            </style>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="pack-type">end</property>
+                            <property name="position">2</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">3</property>
+                  </packing>
+                </child> -->
+
+
+                <!-- <child>
                   <object class="GtkBox">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
@@ -1662,12 +1885,12 @@
                     <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
-                </child>
+                </child> -->
                 <child>
                   <object class="GtkLabel">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">Linux Mint has a great community. Many users will welcome you with open arms and be delighted to help you. Make sure to be patient and respectful with them. Keep a happy and positive attitude and provide accurate information when someone helps you.</property>
+                    <property name="label" translatable="no"></property>
                     <property name="wrap">True</property>
                     <property name="xalign">0</property>
                   </object>
@@ -1681,14 +1904,14 @@
                   <object class="GtkLabel">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">If you have a bad experience with another user, try to solve it responsibly or contact the moderation team. Although we can't guarantee everyone will behave nicely, our project promotes help, respect, tolerance, ideas and constructive discussions.</property>
+                    <property name="label" translatable="no"></property>
                     <property name="wrap">True</property>
                     <property name="xalign">0</property>
                   </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
-                    <property name="position">3</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
               </object>
@@ -1801,7 +2024,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="no">Linux V est une distribution propulsée par Circuit Libre, une entreprise Vendéenne attachée aux valeurs de l'informatique libre et responsable.</property>
+                        <property name="label" translatable="no">Linux V est une distribution proposée par Circuit Libre, une entreprise vendéenne attachée aux valeurs de l'informatique libre et responsable. Consultez la rubrique Aide pour plus d'informations.</property>
                         <property name="wrap">True</property>
                         <property name="xalign">0</property>
                       </object>
@@ -1815,7 +2038,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="no">Basée sur Linux Mint, une distribution Linux reconnue pour sa rapidité, sa légèreté et sa stabilité, Linux V offre une expérience moderne, sécurisante et facile à prendre en main !</property>
+                        <property name="label" translatable="no">Basée sur Linux Mint, une distribution Linux reconnue pour sa rapidité et sa stabilité, Linux V offre une expérience moderne, sécurisante et facile à prendre en main !</property>
                         <property name="wrap">True</property>
                         <property name="xalign">0</property>
                       </object>
@@ -1829,7 +2052,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="no">Cet écran d'accueil va vous guider pour vos premiers pas.</property>
+                        <property name="label" translatable="no">Cet écran d'accueil va vous guider pour vos premiers pas. Vous êtes prêts ?</property>
                         <property name="wrap">True</property>
                         <property name="xalign">0</property>
                       </object>
@@ -1884,7 +2107,7 @@
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
                         <property name="pixel-size">32</property>
-                        <property name="icon-name">cinnamon-symbolic</property>
+                        <property name="icon-name">start-here-symbolic</property>
                         <property name="icon_size">0</property>
                       </object>
                       <packing>

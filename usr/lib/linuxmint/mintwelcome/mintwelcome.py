@@ -41,7 +41,7 @@ class MintWelcome():
         builder.add_from_file('/usr/share/linuxmint/mintwelcome/mintwelcome.ui')
 
         window = builder.get_object("main_window")
-        window.set_icon_name("cinnamon-symbolic")
+        window.set_icon_name("start-here-symbolic")
         window.set_position(Gtk.WindowPosition.CENTER)
         window.connect("destroy", Gtk.main_quit)
 
@@ -63,9 +63,9 @@ class MintWelcome():
             dist_name = "LMDE"
 
         # Setup the labels in the Mint badge
-        #builder.get_object("label_version").set_text("%s %s" % (dist_name, release))
+        builder.get_object("label_version").set_text("Linux V")
         #builder.get_object("label_edition").set_text("%s %s" % (edition, architecture))
-        builder.get_object("label_edition").set_text("Circuit Libre")
+        builder.get_object("label_edition").set_text("Circuit Libre EI")
 
         # Setup the main stack
         self.stack = Gtk.Stack()
@@ -74,13 +74,13 @@ class MintWelcome():
         self.stack.set_transition_duration(150)
 
         # Action buttons
-        builder.get_object("button_forums").connect("clicked", self.visit, "https://forums.linuxmint.com")
+        # builder.get_object("button_forums").connect("clicked", self.visit, "https://forums.linuxmint.com")
         # builder.get_object("button_documentation").connect("clicked", self.visit, "https://linuxmint.com/documentation.php")
         # builder.get_object("button_contribute").connect("clicked", self.visit, "https://linuxmint.com/getinvolved.php")
-        builder.get_object("button_irc").connect("clicked", self.visit, "irc://irc.spotchat.org/linuxmint-help")
+        # builder.get_object("button_irc").connect("clicked", self.visit, "irc://irc.spotchat.org/linuxmint-help")
         builder.get_object("button_codecs").connect("clicked", self.visit, "apt://mint-meta-codecs?refresh=yes")
-        #builder.get_object("button_new_features").connect("clicked", self.visit, new_features)
-        #builder.get_object("button_release_notes").connect("clicked", self.visit, release_notes)
+        # builder.get_object("button_new_features").connect("clicked", self.visit, new_features)
+        # builder.get_object("button_release_notes").connect("clicked", self.visit, release_notes)
         builder.get_object("button_mintupdate").connect("clicked", self.launch, "mintupdate")
         builder.get_object("button_mintinstall").connect("clicked", self.launch, "mintinstall")
         builder.get_object("button_timeshift").connect("clicked", self.pkexec, "timeshift-gtk")

@@ -74,7 +74,7 @@ class MintWelcome():
         self.stack.set_transition_duration(150)
 
         # Action buttons
-        # builder.get_object("button_forums").connect("clicked", self.visit, "https://forums.linuxmint.com")
+        builder.get_object("button_forums").connect("clicked", self.visit, "https://forums.linuxmint.com")
         # builder.get_object("button_documentation").connect("clicked", self.visit, "https://linuxmint.com/documentation.php")
         # builder.get_object("button_contribute").connect("clicked", self.visit, "https://linuxmint.com/getinvolved.php")
         builder.get_object("button_irc").connect("clicked", self.visit, "https://circuitlibre.fr")

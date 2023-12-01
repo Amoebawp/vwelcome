@@ -334,7 +334,7 @@
                             <property name="fill">True</property>
                             <property name="position">0</property>
                           </packing>
-                        </child> -->
+                        </child> 
                         <child>
                           <object class="GtkBox" id="box_new_features">
                             <property name="visible">True</property>
@@ -544,7 +544,7 @@
                             <property name="fill">True</property>
                             <property name="position">2</property>
                           </packing>
-                        </child>
+                        </child>-->
                       </object>
                     </child>
                   </object>
@@ -662,7 +662,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="no">Tout d'abord, faites comme chez vous. Optez pour un thème clair ou foncé, changez le pack d'icones ou le curseur selon vos préférences.</property>
+                            <property name="label" translatable="no">Tout d'abord, faites comme chez vous. Optez pour un environnement clair ou foncé, changez le thème d'icones ou le curseur selon vos préférences.</property>
                             <property name="wrap">True</property>
                             <property name="xalign">0</property>
                           </object>
@@ -747,7 +747,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="no">Ensuite, mettons en place la prise automatique de sauvegardes instantanées du système. Nous recommandons un minimum d'un instantané par jour. Si quelque chose cessait de fonctionner, vous pourriez alors restaurer l'état de fonctionnement précédent de votre ordinateur.</property>
+                            <property name="label" translatable="no">Ensuite, mettons en place la prise automatique de clichés instantanés du système. Nous recommendons au minimum de mettre en place un instantané par jour. Si quelque chose cessait de fonctionner, vous pourriez alors restaurer l'état de fonctionnement de votre ordinateur.</property>
                             <property name="wrap">True</property>
                             <property name="xalign">0</property>
                           </object>
@@ -1470,7 +1470,7 @@
                         <property name="valign">start</property>
                         <property name="margin-top">6</property>
                         <property name="orientation">vertical</property>
-                        <property name="spacing">12</property>
+                        <property name="spacing">6</property>
                         <child>
                           <object class="GtkImage" id="image_new_features4">
                             <property name="visible">True</property>
@@ -1502,7 +1502,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">Circuit Libre - Votre assistance informatique en Vendée !</property>
+                            <property name="label" translatable="no">Circuit Libre, l'informatique libre et responsable en Vendée</property>
                             <property name="xalign">0</property>
                             <attributes>
                               <attribute name="weight" value="bold"/>
@@ -1519,7 +1519,8 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="no">Linux V est édité par Circuit Libre, une entreprise artisanale vendéenne attachée à promouvoir un monde informatique libre et responsable.</property>
+                            <!--<property name="label" translatable="no">Linux V est édité par Circuit Libre, une entreprise vendéenne attachée à promouvoir un monde informatique libre et plus responsable. Afin de vous garantir la meilleure expérience possible sur votre système d'exploitation, vous pouvez bénéficier d'un service d'assistance de proximité, professionnel et personnalisé.</property>-->
+                            <property name="label" translatable="no">Linux V est une distribution Linux proposée par Circuit Libre, une entreprise de proximité situé en Vendée, pour équiper ses ordinateurs reconditionnés. Afin de vous garantir la meilleure expérience possible avec votre système, vous pouvez bénéficier d'un service d'assistance de proximité, professionnel et personnalisé.</property>
                             <property name="wrap">True</property>
                             <property name="xalign">0</property>
                           </object>
@@ -1533,21 +1534,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="no">En ayant la volonté toute particulière de vous fournir la meilleure expérience possible avec nos ordinateurs, il vous est également proposé une assistance professionnelle et personnalisée.</property>
-                            <property name="wrap">True</property>
-                            <property name="xalign">0</property>
-                          </object>
-                          <packing>
-                            <property name="expand">True</property>
-                            <property name="fill">True</property>
-                            <property name="position">2</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="no">Retrouvez comment nous contacter grâçe à l'application "Assistance Circuit Libre" installée automatiquement avec votre système d'exploitation Linux V.</property>
+                            <property name="label" translatable="no">Contacter votre assistance grâçe à l'application "Assistance Circuit Libre" installée automatiquement avec votre système d'exploitation Linux V.</property>
                             <property name="wrap">True</property>
                             <property name="xalign">0</property>
                             <attributes>
@@ -1557,7 +1544,7 @@
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
-                            <property name="position">3</property>
+                            <property name="position">2</property>
                           </packing>
                         </child>
                         <child>
@@ -1641,7 +1628,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="no">Forums Web (International)</property>
+                            <property name="label" translatable="no">Forums Linux Mint (International)</property>
                             <property name="xalign">0</property>
                             <attributes>
                               <attribute name="weight" value="bold"/>
@@ -1665,7 +1652,7 @@
                           <packing>
                             <property name="expand">True</property>
                             <property name="fill">True</property>
-                            <property name="position">1</property>
+                            <property name="position">2</property>
                           </packing>
                         </child>
                         <child>
@@ -2055,7 +2042,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="no">Linux V est une distribution proposée par Circuit Libre, une entreprise vendéenne attachée aux valeurs de l'informatique libre et responsable. Consultez la rubrique Aide pour plus d'informations.</property>
+                        <property name="label" translatable="no">Basée sur Linux Mint, une distribution Linux reconnue pour sa rapidité et sa stabilité, Linux V offre une expérience alternative moderne, sécurisée et facile à prendre en main !</property>
                         <property name="wrap">True</property>
                         <property name="xalign">0</property>
                       </object>
@@ -2069,7 +2056,7 @@
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="no">Basée sur Linux Mint, une distribution Linux reconnue pour sa rapidité et sa stabilité, Linux V offre une expérience moderne, sécurisante et facile à prendre en main !</property>
+                        <property name="label" translatable="no">Linux V est une distribution proposée par Circuit Libre, une entreprise vendéenne attachée aux valeurs de l'informatique libre et responsable. Consultez la rubrique Aide pour plus d'informations.</property>
                         <property name="wrap">True</property>
                         <property name="xalign">0</property>
                       </object>
